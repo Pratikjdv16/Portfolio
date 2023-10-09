@@ -1,0 +1,282 @@
+* {
+  box-sizing: border-box;
+  padding: 0rem;
+  margin: 0rem;
+  font-family: sans-serif;
+}
+
+#homeContainer {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 43.7rem;
+  overflow: hidden;
+  background: repeating-linear-gradient(7deg, black, transparent 415px);
+  /* border: 1px solid red; */
+}
+
+#homeContainerBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 65.2rem;
+  height: 25.5rem;
+  /* border: 1px solid blue; */
+}
+
+.section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 27rem;
+  height: 25rem;
+  /* border: 1px solid white; */
+}
+
+.section2 {
+  /* border: 1px solid yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* animation: pratik-2 30s ease-in-out infinite; */
+  /* border-left: 0.1rem solid #ffdac1; */
+  border-radius: 4rem 1rem 13rem 13rem;
+  /* border-right: 0.1rem solid #ffdac1; */
+  /* box-shadow: -0.35rem 0.35rem 0.65rem #000000c2; */
+  width: 27rem;
+  height: 25rem;
+}
+
+.section2 div {
+  background: url("../Icons/software-engineer2-png.png") center center/cover;
+  /* animation: pratik-1 30s ease infinite; */
+  width: 27rem;
+  height: 25rem;
+  border-radius: 0rem 0rem 3.5rem 4.5rem;
+}
+
+@keyframes pratik-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes pratik-2 {
+  0% {
+    border-color: darkturquoise;
+  }
+
+  25% {
+    border-color: tomato;
+  }
+
+  50% {
+    border-color: royalblue;
+  }
+
+  75% {
+    border-color: khaki;
+  }
+
+  100% {
+    border-color: slategray;
+  }
+}
+
+.heading {
+  font-size: 2.37rem;
+  height: 3rem;
+}
+
+.heading span {
+  font-weight: 600;
+  color: #a33f3f;
+  padding-right: 0.93rem;
+  text-shadow: 0rem 0rem 0.62rem black;
+}
+
+.heading .ownerName {
+  color: darkgrey;
+  font-weight: 600;
+  text-shadow: none;
+}
+
+.position {
+  color: grey;
+  font-size: 1.06rem;
+  height: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+  #homeContainer {
+    height: 43.7rem;
+  }
+
+  #homeContainerBox {
+    width: 60.2rem;
+    height: 22rem;
+  }
+
+  .section1 {
+    width: 25rem;
+    height: 21rem;
+  }
+
+  .heading {
+    font-size: 2.2rem;
+    height: 5rem;
+  }
+
+  .heading span {
+    height: 2.5rem;
+  }
+
+  .heading .ownerName {
+    height: 2.5rem;
+  }
+
+  .section2 {
+    width: 23rem;
+    height: 21rem;
+  }
+
+  .section2 div {
+    width: 23rem;
+    height: 21rem;
+    border-radius: 0rem 0rem 3.5rem 4rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #homeContainerBox {
+    width: 45rem;
+    height: 18.5rem;
+  }
+
+  .section1 {
+    width: 22rem;
+    height: 17rem;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+    height: 3.9rem;
+  }
+
+  .heading span {
+    height: 1.9rem;
+  }
+
+  .heading .ownerName {
+    height: 1.9rem;
+  }
+
+  .section2 {
+    width: 20rem;
+    height: 18rem;
+  }
+
+  .section2 div {
+    width: 20rem;
+    height: 18rem;
+    border-radius: 0rem 0rem 2.5rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #homeContainer {
+    height: 57rem;
+  }
+
+  #homeContainerBox {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30rem;
+    height: 33rem;
+  }
+
+  .section1 {
+    width: 19rem;
+    height: 7rem;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    font-size: 2.3rem;
+    height: 5rem;
+  }
+
+  .heading span {
+    height: 2.5rem;
+  }
+
+  .heading .ownerName {
+    height: 2.5rem;
+  }
+
+  .section2 {
+    width: 21rem;
+    height: 19rem;
+  }
+
+  .section2 div {
+    width: 21rem;
+    height: 19rem;
+    border-radius: 0rem 0rem 2.5rem 3.3rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #homeContainer {
+    height: 46rem;
+  }
+
+  #homeContainerBox {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25rem;
+    height: 32rem;
+  }
+
+  .section1 {
+    justify-content: center;
+    width: 16rem;
+    height: 7rem;
+  }
+
+  .heading {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    height: 5rem;
+  }
+
+  .heading span {
+    height: 2.5rem;
+  }
+
+  .heading .ownerName {
+    height: 2.5rem;
+  }
+
+  .section2 {
+    width: 19rem;
+    height: 17rem;
+  }
+
+  .section2 div {
+    width: 19rem;
+    height: 17rem;
+    border-radius: 0rem 0rem 2.5rem 3rem;
+  }
+}

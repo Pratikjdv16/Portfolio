@@ -1,0 +1,334 @@
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#workContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 43.7rem;
+  /* border: 1px solid red; */
+  background: repeating-linear-gradient(7deg, black, transparent 415px);
+}
+
+#workContainerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 63rem;
+  height: 32rem;
+  overflow: hidden;
+  /* border: 1px solid blue; */
+}
+
+.workHeading {
+  color: darkgrey;
+  /* border: 1px solid red; */
+  font-size: 3rem;
+  width: 63rem;
+  height: 3.75rem;
+}
+
+.worksBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 1px solid white; */
+  width: 63rem;
+  height: 21.93rem;
+}
+
+#firstWork {
+  display: flex;
+  align-items: flex-end;
+  border-left: 0.31rem solid grey;
+  background: url("../Icons/work_2.jpg") center center/cover;
+  width: 18.75rem;
+  height: 21.93rem;
+  border-radius: 0rem 1.87rem 1.87rem 0rem;
+  overflow: hidden;
+}
+
+#secondWork {
+  display: flex;
+  align-items: flex-end;
+  border-left: 0.31rem solid grey;
+  background: url("../Icons/work_3.jpg") center center/cover;
+  width: 18.75rem;
+  height: 21.93rem;
+  border-radius: 0rem 1.87rem 1.87rem 0rem;
+  overflow: hidden;
+}
+
+#thirdWork {
+  display: flex;
+  align-items: flex-end;
+  border-left: 0.31rem solid grey;
+  background: url("../Icons/work_1.jpg") center center/cover;
+  width: 18.75rem;
+  height: 21.93rem;
+  border-radius: 0rem 1.87rem 1.87rem 0rem;
+  overflow: hidden;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18.75rem;
+  height: 0rem;
+  background-color: #f0ffff40;
+  border-radius: 0rem 1.87rem 1.87rem 0rem;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.project img {
+  width: 2rem;
+  height: 2rem;
+  z-index: 1;
+}
+
+.project-title {
+  color: black;
+  font-size: 1.06rem;
+  font-weight: 700;
+  width: fit-content;
+  height: 1.5rem;
+  margin-top: 1.5rem;
+  text-shadow: 0rem 0rem 0.62rem #181818;
+}
+
+.project-Btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.88rem;
+  width: 4.5rem;
+  height: 4.5rem;
+  background: -webkit-linear-gradient(black, #181818, black);
+  color: darkgray;
+  border: 0.06rem solid grey;
+  border-radius: 1.8rem;
+  cursor: pointer;
+}
+
+#firstWork:hover .project {
+  height: 100%;
+  transition: all 0.7s;
+}
+
+#secondWork:hover .project {
+  height: 100%;
+  transition: all 0.7s;
+}
+
+#thirdWork:hover .project {
+  height: 100%;
+  transition: all 0.7s;
+}
+
+#seeMoreBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.88rem;
+  width: 8.75rem;
+  height: 2.5rem;
+  background: -webkit-linear-gradient(#00000050, #181818, #00000050);
+  color: darkgray;
+  border: 0.06rem solid grey;
+  border-radius: 0.37rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#seeMoreBtn:hover {
+  border-radius: 1.25rem;
+  transition: all 0.5s ease-in-out;
+  font-size: 0.89rem;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+  #workContainerBox {
+    width: 60rem;
+  }
+
+  .workHeading {
+    width: 60rem;
+  }
+
+  .worksBox {
+    width: 60rem;
+    height: 20.93rem;
+  }
+
+  #firstWork {
+    width: 17.75rem;
+    height: 20.93rem;
+  }
+
+  #secondWork {
+    width: 17.75rem;
+    height: 20.93rem;
+  }
+
+  #thirdWork {
+    width: 17.75rem;
+    height: 20.93rem;
+  }
+
+  .project-Btn {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  #seeMoreBtn {
+    font-size: 0.83rem;
+    width: 8.6rem;
+    height: 2.45rem;
+  }
+
+  #seeMoreBtn:hover {
+    font-size: 0.84rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #workContainerBox {
+    width: 50rem;
+    height: 29rem;
+  }
+
+  .workHeading {
+    font-size: 2.9rem;
+    width: 50rem;
+  }
+
+  .worksBox {
+    width: 50rem;
+    height: 17.93rem;
+  }
+
+  #firstWork {
+    width: 14.75rem;
+    height: 17.93rem;
+  }
+
+  #secondWork {
+    width: 14.75rem;
+    height: 17.93rem;
+  }
+
+  #thirdWork {
+    width: 14.75rem;
+    height: 17.93rem;
+  }
+
+  .project-Btn {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
+  #seeMoreBtn {
+    font-size: 0.72rem;
+    width: 8.2rem;
+    height: 2.3rem;
+  }
+
+  #seeMoreBtn:hover {
+    font-size: 0.73rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #workContainer {
+    height: 75rem;
+  }
+
+  #workContainerBox {
+    justify-content: space-between;
+    width: 23rem;
+    height: 70rem;
+  }
+
+  .workHeading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.7rem;
+    width: 23rem;
+    height: 3.4rem;
+  }
+
+  .worksBox {
+    justify-content: center;
+    width: 23rem;
+    height: 61rem;
+  }
+
+  #firstWork {
+    width: 14.75rem;
+    height: 17.93rem;
+  }
+
+  #secondWork {
+    width: 14.75rem;
+    height: 17.93rem;
+  }
+
+  #thirdWork {
+    width: 14.75rem;
+    height: 17.93rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #workContainer {
+    height: 75rem;
+  }
+
+  #workContainerBox {
+    justify-content: space-between;
+    width: 23rem;
+    height: 70rem;
+  }
+
+  .workHeading {
+    display: flex;
+    justify-content: center;
+    font-size: 2.7rem;
+    width: 23rem;
+    height: 3.4rem;
+  }
+
+  .worksBox {
+    justify-content: center;
+    width: 23rem;
+    height: 61rem;
+  }
+
+  #firstWork {
+    width: 14.75rem;
+    height: 17.93rem;
+  }
+
+  #secondWork {
+    width: 14.75rem;
+    height: 17.93rem;
+  }
+
+  #thirdWork {
+    width: 14.75rem;
+    height: 17.93rem;
+  }
+}

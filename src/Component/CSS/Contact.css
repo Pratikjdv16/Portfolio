@@ -1,0 +1,549 @@
+* {
+  padding: 0rem;
+  margin: 0rem;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+#contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 43.7rem;
+  background: repeating-linear-gradient(7deg, black, transparent 415px);
+  color: white;
+  /* border: 1px solid red; */
+}
+
+#contactContainerBox {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 71rem;
+  height: 22rem;
+  /* border: 1px solid blue; */
+}
+
+/* CONTACT Left */
+.contactLeft {
+  display: flex;
+  justify-content: flex-start;
+  width: 28rem;
+  height: 17rem;
+  /* border: 1px solid white; */
+}
+
+.contactLeftContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 28rem;
+  height: 17rem;
+}
+
+.contactHeading {
+  color: darkgrey;
+  font-size: 3.12rem;
+  width: 28rem;
+  height: 3.1rem;
+}
+
+.emailIdDiv {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  height: 1.56rem;
+  width: 28rem;
+}
+
+.emailIdDiv img {
+  width: 1.37rem;
+  height: 1.37rem;
+  border-radius: 0.31rem;
+}
+
+.emailIdDiv a {
+  color: grey;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-left: 0.62rem;
+}
+
+.phoneNoDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 1.56rem;
+  width: 28rem;
+}
+
+.phoneNoDiv img {
+  width: 1.37rem;
+  height: 1.37rem;
+  border-radius: 0.31rem;
+}
+
+.phoneNoDiv a {
+  font-size: 1rem;
+  padding-left: 0.62rem;
+  text-decoration: none;
+  color: grey;
+  padding-bottom: 1rem;
+}
+
+.socialMediaIcons {
+  width: 28rem;
+  height: fit-content;
+}
+
+.socialMediaIcons a {
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 1.25rem;
+}
+
+.instagram {
+  margin: 0rem 0.5rem;
+}
+
+.socialMediaIcons a img {
+  width: 1.87rem;
+  height: 1.87rem;
+  z-index: 1;
+}
+
+.downloadCV {
+  display: flex;
+  margin: 1.56rem 0rem;
+  height: 2.37rem;
+}
+
+.downloadCV a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.86rem;
+  background: -webkit-linear-gradient(#00000052, #181818, #00000052);
+  /* background: #181818; */
+  color: darkgray;
+  width: 8.75rem;
+  height: 2.5rem;
+  border-radius: 0.37rem;
+  cursor: pointer;
+  border: 0.06rem solid grey;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+
+.downloadCV a:hover {
+  border-radius: 1.25rem;
+  transition: all 0.5s ease-in-out;
+  font-size: 0.87rem;
+}
+
+/* CONTACT Right */
+.contactRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42.18rem;
+  height: 22rem;
+  /* border: 1px solid yellow; */
+}
+
+.contactRightContent {
+  display: flex;
+  width: 38.31rem;
+  height: 22rem;
+}
+
+.contactRightContent form {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 38.31rem;
+  height: 20rem;
+}
+
+.contactRightContent input {
+  border: 0.06rem solid grey;
+  background: #181818;
+  border-radius: 0.31rem;
+  outline: none;
+  color: darkgray;
+  width: 38.31rem;
+  height: 3rem;
+}
+
+.contactRightContent textarea {
+  background: #181818;
+  border: 0.06rem solid grey;
+  border-radius: 0.31rem;
+  outline: none;
+  color: darkgray;
+  width: 38.31rem;
+  height: 5rem;
+}
+
+#userName {
+  width: 38.31rem;
+  height: 3rem;
+  padding-left: 0.62rem;
+  font-size: 0.93rem;
+  transition: all 0.5s ease-in-out;
+  text-transform: capitalize;
+}
+
+#email {
+  width: 38.31rem;
+  height: 3rem;
+  padding-left: 0.62rem;
+  font-size: 0.93rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#massage {
+  font-size: 0.93rem;
+  width: 38.31rem;
+  padding: 0.62rem;
+  transition: all 0.3s ease-in-out;
+}
+
+#submitBtn {
+  font-size: 0.88rem;
+  width: 8.75rem;
+  height: 2.5rem;
+  background: -webkit-linear-gradient(#00000050, #181818, #00000050);
+  color: darkgray;
+  border: 0.06rem solid grey;
+  border-radius: 0.37rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#submitBtn:hover {
+  border-radius: 1.25rem;
+  transition: all 0.5s ease-in-out;
+  font-size: 0.91rem;
+}
+
+/* Add User Submit Successfully PopUp Section*/
+#popUp {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #0e0e0ef0;
+  border: 1px solid grey;
+  border-radius: 7px;
+  position: fixed;
+  width: 700px;
+  height: 250px;
+  font-size: 1.93rem;
+}
+
+#popUp h1 {
+  color: darkgrey;
+}
+
+#popUpBtn {
+  font-size: 0.88rem;
+  width: 8rem;
+  height: 2.8rem;
+  background: #181818;
+  color: darkgray;
+  border: 0.06rem solid grey;
+  border-radius: 0.37rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+#popUpBtn:hover {
+  border-radius: 1.25rem;
+  transition: all 0.5s ease-in-out;
+  font-size: 0.91rem;
+}
+
+/* Media Query */
+@media (max-width: 1200px) {
+  #contactContainerBox {
+    width: 61rem;
+  }
+
+  .contactLeft {
+    width: 25rem;
+  }
+
+  .contactLeftContent {
+    width: 25rem;
+  }
+
+  .contactHeading {
+    font-size: 3rem;
+    width: 25rem;
+  }
+
+  .contactRight {
+    width: 35rem;
+  }
+
+  .contactRightContent {
+    width: 35rem;
+  }
+
+  .contactRightContent form {
+    width: 35rem;
+  }
+
+  .contactRightContent input {
+    width: 35rem;
+  }
+
+  .contactRightContent textarea {
+    width: 35rem;
+  }
+
+  #userName {
+    width: 35rem;
+  }
+
+  #email {
+    width: 35rem;
+  }
+
+  #massage {
+    width: 35rem;
+  }
+
+  /* Add User Submit Successfully PopUp Section*/
+  #popUp {
+    width: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  #contactContainer {
+    height: 52rem;
+  }
+
+  #contactContainerBox {
+    align-content: space-between;
+    width: 51rem;
+    height: 42rem;
+  }
+
+  .contactLeft {
+    width: 35rem;
+  }
+
+  .contactLeftContent {
+    width: 35rem;
+  }
+
+  .contactHeading {
+    font-size: 3rem;
+    width: 35rem;
+  }
+
+  .emailIdDiv {
+    width: 35rem;
+  }
+
+  .phoneNoDiv {
+    width: 35rem;
+  }
+
+  .socialMediaIcons {
+    width: 35rem;
+  }
+
+  .contactRight {
+    width: 35rem;
+  }
+
+  .contactRightContent {
+    width: 35rem;
+  }
+
+  .contactRightContent form {
+    width: 35rem;
+  }
+
+  .contactRightContent input {
+    width: 35rem;
+  }
+
+  .contactRightContent textarea {
+    width: 35rem;
+  }
+
+  #userName {
+    width: 35rem;
+  }
+
+  #email {
+    width: 35rem;
+  }
+
+  #massage {
+    width: 35rem;
+  }
+
+  /* Add User Submit Successfully PopUp Section*/
+  #popUp {
+    width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  #contactContainer {
+    height: 57rem;
+  }
+
+  #contactContainerBox {
+    align-content: space-between;
+    width: 51rem;
+    height: 42rem;
+  }
+
+  .contactLeft {
+    width: 35rem;
+  }
+
+  .contactLeftContent {
+    width: 35rem;
+  }
+
+  .contactHeading {
+    font-size: 3rem;
+    width: 35rem;
+  }
+
+  .emailIdDiv {
+    width: 35rem;
+  }
+
+  .phoneNoDiv {
+    width: 35rem;
+  }
+
+  .socialMediaIcons {
+    width: 35rem;
+  }
+
+  .contactRight {
+    width: 35rem;
+  }
+
+  .contactRightContent {
+    width: 35rem;
+  }
+
+  .contactRightContent form {
+    width: 35rem;
+  }
+
+  .contactRightContent input {
+    width: 35rem;
+  }
+
+  .contactRightContent textarea {
+    width: 35rem;
+  }
+
+  #userName {
+    width: 35rem;
+  }
+
+  #email {
+    width: 35rem;
+  }
+
+  #massage {
+    width: 35rem;
+  }
+
+  /* Add User Submit Successfully PopUp Section*/
+  #popUp {
+    width: 500px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  #contactContainer {
+    height: 52rem;
+  }
+
+  #contactContainerBox {
+    align-content: space-between;
+    width: 21.1rem;
+    height: 42rem;
+  }
+
+  .contactLeft {
+    width: 21.1rem;
+  }
+
+  .contactLeftContent {
+    width: 21.1rem;
+  }
+
+  .contactHeading {
+    font-size: 3rem;
+    width: 21.1rem;
+  }
+
+  .emailIdDiv {
+    width: 21.1rem;
+  }
+
+  .phoneNoDiv {
+    width: 21.1rem;
+  }
+
+  .socialMediaIcons {
+    width: 21.1rem;
+  }
+
+  .contactRight {
+    width: 21.1rem;
+  }
+
+  .contactRightContent {
+    width: 21.1rem;
+  }
+
+  .contactRightContent form {
+    width: 21.1rem;
+  }
+
+  .contactRightContent input {
+    width: 21.1rem;
+  }
+
+  .contactRightContent textarea {
+    width: 21.1rem;
+  }
+
+  #userName {
+    width: 21.1rem;
+  }
+
+  #email {
+    width: 21.1rem;
+  }
+
+  #massage {
+    width: 21.1rem;
+  }
+
+  /* Add User Submit Successfully PopUp Section*/
+  #popUp {
+    width: 400px;
+    height: 200px;
+  }
+}
