@@ -48,7 +48,7 @@ const Work = () => {
           </aside>
           <a
             id="seeMoreBtn"
-            href="https://github.com/Pratikjdv16"
+            href="https://github.com/Pratikjdv16/"
             target="blank"
           >
             See More
