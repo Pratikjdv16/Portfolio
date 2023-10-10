@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./CSS/HamburgerNav.css";
 import hamburger from "../Component/Icons/hamburger2-icon.png";
 import cross from "../Component/Icons/cross2-icon.png";
+import Logo from "../Component/Icons/portfolio-logo.png";
 
 const HamburgerNav = () => {
   const [remove, setRemove] = useState({
@@ -41,6 +42,9 @@ const HamburgerNav = () => {
           style={{ borderBottom: remove.borderBottom }}
           className="hamburgerNav-section"
         >
+          <div className="webTitle">
+            <img src={Logo} alt="" />
+          </div>
           <button onClick={showHamburgerNav} on className="showHamburgerBtn">
             <img src={remove.image} alt="" />
           </button>

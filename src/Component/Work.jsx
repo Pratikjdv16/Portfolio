@@ -11,15 +11,23 @@ const Work = () => {
           <aside className="worksBox">
             <div id="firstWork" className="workImg">
               <div className="project">
-                <a className="project-Btn" href="/">
+                <a
+                  className="project-Btn"
+                  href="https://todo16-app.netlify.app/"
+                  target="blank"
+                >
                   <img src={link} alt="" />
                 </a>
-                <p className="project-title">To Do List</p>
+                <p className="project-title">To-Do List</p>
               </div>
             </div>
             <div id="secondWork" className="workImg">
               <div className="project">
-                <a className="project-Btn" href="/">
+                <a
+                  className="project-Btn"
+                  href="https://weather16-app.netlify.app/"
+                  target="blank"
+                >
                   <img src={link} alt="" />
                 </a>
                 <p className="project-title">Weather App</p>
@@ -27,14 +35,24 @@ const Work = () => {
             </div>
             <div id="thirdWork" className="workImg">
               <div className="project">
-                <a className="project-Btn" href="/">
+                <a
+                  className="project-Btn"
+                  href="https://facebook16.netlify.app/"
+                  target="blank"
+                >
                   <img src={link} alt="" />
                 </a>
-                <p className="project-title">E-Commerce Web</p>
+                <p className="project-title">Facebook</p>
               </div>
             </div>
           </aside>
-          <button id="seeMoreBtn">See More</button>
+          <a
+            id="seeMoreBtn"
+            href="https://github.com/Pratikjdv16"
+            target="blank"
+          >
+            See More
+          </a>
         </section>
       </section>
     </>

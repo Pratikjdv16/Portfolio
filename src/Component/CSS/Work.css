@@ -150,6 +150,7 @@
   border-radius: 0.37rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  text-decoration: none;
 }
 
 #seeMoreBtn:hover {

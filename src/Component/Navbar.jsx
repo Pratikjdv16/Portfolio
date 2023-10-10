@@ -1,15 +1,15 @@
 import React from "react";
 import "../Component/CSS/Navbar.css";
 import { NavLink } from "react-router-dom";
-// import Pratik_logo from "../Component/Icons/Pratik-lcon.png";
+import Logo from "../Component/Icons/portfolio-logo.png";
 
 const Navbar = () => {
   return (
     <>
       <section className="navbar">
-        {/* <div className="webTitle">
-          <img src={Pratik_logo} alt="" />
-        </div> */}
+        <div className="webTitle">
+          <img src={Logo} alt="" />
+        </div>
 
         <ul>
           <li>

@@ -31,7 +31,7 @@ const Contact = () => {
     text: "Successfully Submitted",
   });
 
-  // onChange event 
+  // onChange event
   const usernameInputChange = (event) => {
     setState({ ...state, userName: event.target.value });
     setStyleState({ ...styleState, userName_borderColor: "gray" });
@@ -171,6 +171,7 @@ const Contact = () => {
                   onChange={usernameInputChange}
                   onBlur={userNameInputBlur}
                   placeholder="Enter your name"
+                  autoComplete="off"
                 />
                 <input
                   type="email"
@@ -183,6 +184,7 @@ const Contact = () => {
                   onChange={emailInputChange}
                   onBlur={emailInputBlur}
                   placeholder="Enter your email"
+                  autoComplete="off"
                 />
                 <textarea
                   id="massage"
