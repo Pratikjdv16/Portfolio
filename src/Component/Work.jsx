@@ -13,12 +13,12 @@ const Work = () => {
               <div className="project">
                 <a
                   className="project-Btn"
-                  href="https://todo16-app.netlify.app/"
+                  href="https://flipkart16.netlify.app/"
                   target="blank"
                 >
                   <img src={link} alt="" />
                 </a>
-                <p className="project-title">To-Do List</p>
+                <p className="project-title">Flipkart Clone</p>
               </div>
             </div>
             <div id="secondWork" className="workImg">
