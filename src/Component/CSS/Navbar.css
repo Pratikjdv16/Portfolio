@@ -80,47 +80,8 @@
   height: 2rem;
 }
 
-/* Media Query */
-@media (max-width: 1200px) {
-  .navbar ul {
-    width: 35.5rem;
-  }
-  .navbar ul li a {
-    font-size: 1rem;
-  }
-  .webTitle {
-    margin-left: 7rem;
-  }
-}
-
-@media (max-width: 992px) {
-  .navbar ul {
-    width: 33.5rem;
-  }
-  .navbar ul li a {
-    font-size: 0.93rem;
-  }
-
-  .webTitle {
-    margin-left: 6rem;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 1440px) {
   .navbar {
     display: none;
-  }
-
-  .webTitle {
-    margin-left: 1rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    display: none;
-  }
-  .webTitle {
-    margin-left: 0.5rem;
   }
 }

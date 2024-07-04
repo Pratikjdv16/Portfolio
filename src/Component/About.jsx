@@ -101,7 +101,6 @@ const About = () => {
           <AboutNav />
           <Outlet />
         </section>
-        <Footer />
       </section>
     </>
   );

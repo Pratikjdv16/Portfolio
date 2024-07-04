@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react"; // SF is rafce
 import "../Component/CSS/Home.css";
 import Footer from "./Footer";
-import location from "./Icons/location.png";
 import openToWork from "./Icons/open-to-work.png";
 
 const Home = () => {
@@ -66,7 +65,6 @@ const Home = () => {
             </p>
           </aside>
         </section>
-        <Footer />
       </section>
     </>
   );

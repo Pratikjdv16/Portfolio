@@ -35,15 +35,4 @@
   height: fit-content;
 }
 
-/* Media Query */
-@media (max-width: 768px) {
-  #footer div {
-    width: 35rem;
-  }
-}
 
-@media (max-width: 600px) {
-  #footer div {
-    width: 22.1rem;
-  }
-}

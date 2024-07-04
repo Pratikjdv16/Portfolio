@@ -17,23 +17,26 @@ const Work = () => {
   useEffect(() => {
     const projectBoxes = document.querySelectorAll("#projectBox");
 
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("animate");
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.1
-    });
+    const observer = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.1,
+      }
+    );
 
-    projectBoxes.forEach(box => {
+    projectBoxes.forEach((box) => {
       observer.observe(box);
     });
 
     return () => {
-      projectBoxes.forEach(box => {
+      projectBoxes.forEach((box) => {
         observer.unobserve(box);
       });
     };
@@ -48,12 +51,16 @@ const Work = () => {
           {/* All Projects */}
           <aside className="allProjectBox">
             {/* First Project */}
-            <div id="projectBox" className="projectBox" style={{ marginTop: state }}>
+            <div
+              id="projectBox"
+              className="projectBox"
+              style={{ marginTop: state }}
+            >
               <div id="firstWork" className="workImg">
                 <div className="project">
                   <a
                     className="project-Btn"
-                    href="https://flipkart16.netlify.app/"
+                    href="https://flipkart16.vercel.app/"
                     target="blank"
                   >
                     <svg
@@ -143,7 +150,7 @@ const Work = () => {
                 <div className="project">
                   <a
                     className="project-Btn"
-                    href="https://weather16-app.netlify.app/"
+                    href="https://clearsky.vercel.app/"
                     target="blank"
                   >
                     <svg
@@ -167,7 +174,7 @@ const Work = () => {
                 <div className="project">
                   <a
                     className="project-Btn"
-                    href="https://facebook16.netlify.app/"
+                    href="https://facebook16.vercel.app/"
                     target="blank"
                   >
                     <svg
@@ -227,11 +234,9 @@ const Work = () => {
             </div>
           </aside>
         </section>
-        <Footer />
       </section>
     </>
   );
 };
 
 export default Work;
-
