@@ -150,7 +150,7 @@ const Work = () => {
                 <div className="project">
                   <a
                     className="project-Btn"
-                    href="https://clearsky.vercel.app/"
+                    href="https://clearsky-seven.vercel.app/"
                     target="blank"
                   >
                     <svg

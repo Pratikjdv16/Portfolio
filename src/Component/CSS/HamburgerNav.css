@@ -5,7 +5,7 @@
 }
 
 .hamburger {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   backdrop-filter: blur(10px);
@@ -82,10 +82,4 @@
 
 .hamburgerNav div a.active {
   color: #a33f3f;
-}
-
-@media (max-width: 600px) {
-  .hamburger {
-    display: flex;
-  }
 }
