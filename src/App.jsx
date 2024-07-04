@@ -5,7 +5,6 @@ import Work from "./Component/Work";
 import Home from "./Component/Home";
 import Navbar from "./Component/Navbar";
 import HamburgerNav from "./Component/HamburgerNav";
-import Footer from "./Component/Footer";
 import Skills from "./Component/AboutComp/Skills";
 import Experience from "./Component/AboutComp/Experience";
 import Education from "./Component/AboutComp/Education";
@@ -33,8 +32,6 @@ const App = () => {
 
         <Route path="/work" element={<Work />} />
       </Routes>
-
-      <Footer />
     </>
   );
 };

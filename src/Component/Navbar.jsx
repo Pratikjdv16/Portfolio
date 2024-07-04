@@ -1,38 +1,54 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../Component/CSS/Navbar.css";
 import { NavLink } from "react-router-dom";
 import Logo from "../Component/Icons/portfolio-logo.png";
 
 const Navbar = () => {
+  const [isBlurred, setIsBlurred] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY > 50) {
+      setIsBlurred(true);
+    } else {
+      setIsBlurred(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <section className="navbar">
+      <section className={`navbar ${isBlurred ? "blur" : ""}`}>
         <div className="webTitle">
           <img src={Logo} alt="" />
         </div>
-
-        <ul>
-          <li>
+        <div className="navbar-content">
+          <div>
             <NavLink id="homeNavBtn" to="/home">
               Home
             </NavLink>
-          </li>
-          <li>
+          </div>
+          <div>
             <NavLink id="aboutNavBtn" to="/about">
               About
             </NavLink>
-          </li>
-          <li>
+          </div>
+          <div>
             <NavLink id="workNavBtn" to="/work">
               Work
             </NavLink>
-          </li>
-          <li>
+          </div>
+          <div>
             <NavLink id="contactNavBtn" to="/contact">
               Contact
             </NavLink>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
     </>
   );

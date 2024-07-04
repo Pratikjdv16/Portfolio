@@ -2,7 +2,6 @@
   padding: 0rem;
   margin: 0rem;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 #workContainer {
@@ -10,10 +9,10 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: absolute;
+  top: 3.4rem;
   width: 100%;
-  height: 43.7rem;
-  /* border: 1px solid red; */
-  background: repeating-linear-gradient(7deg, black, transparent 415px);
+  height: fit-content;
 }
 
 #workContainerBox {
@@ -22,60 +21,129 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 63rem;
-  height: 32rem;
-  overflow: hidden;
-  /* border: 1px solid blue; */
+  width: 72.1rem;
+  height: fit-content;
+  padding-top: 4rem;
 }
 
 .workHeading {
-  color: darkgrey;
-  /* border: 1px solid red; */
-  font-size: 3rem;
-  width: 63rem;
+  color: black;
+  font-size: 3.12rem;
+  width: 100%;
   height: 3.75rem;
+  margin-bottom: 2rem;
 }
 
-.worksBox {
+.allProjectBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: fit-content;
+}
+
+#projectBox {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  /* border: 1px solid white; */
-  width: 63rem;
-  height: 21.93rem;
+  align-items: flex-start;
+  width: 100%;
+  height: 29rem;
+  padding: 1rem;
+  /* margin-bottom: 4rem; */
+  transition: all 0.5s ease-in-out;
 }
 
 #firstWork {
   display: flex;
   align-items: flex-end;
-  border-left: 0.31rem solid grey;
   background: url("../Icons/work_2.jpg") center center/cover;
-  width: 18.75rem;
-  height: 21.93rem;
-  border-radius: 0rem 1.87rem 1.87rem 0rem;
+  box-shadow: 5.2px 5.4px 0px rgb(255 255 255), 24px 25px 0px rgb(229 231 235);
+  border-radius: 0rem 1rem 0rem 1rem;
+  width: 21rem;
+  height: 25rem;
   overflow: hidden;
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 45rem;
+  height: 100%;
+  padding-top: 1rem;
+}
+
+.projectHeading {
+  color: #454545;
+  font-size: 2.5rem;
+  width: 100%;
+  height: 3.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.projectPara {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+}
+
+.projectPara p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1rem;
+  color: #4b5563;
+  text-align: justify;
+  line-height: 1.43rem;
+  width: 100%;
+  height: fit-content;
+  margin-top: 1rem;
+}
+
+.projectPara p > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #454545;
+  background-color: #e5e7eb;
+  border-radius: 0rem 0.3rem 0rem 0.3rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 2rem;
+  padding: 0rem 1rem;
+  margin-right: 0.5rem;
+  border-bottom: 1px solid #454545;
+  border-right: 1px solid #454545;
 }
 
 #secondWork {
   display: flex;
   align-items: flex-end;
-  border-left: 0.31rem solid grey;
   background: url("../Icons/work_3.jpg") center center/cover;
-  width: 18.75rem;
-  height: 21.93rem;
-  border-radius: 0rem 1.87rem 1.87rem 0rem;
+  box-shadow: 5.2px 5.4px 0px rgb(255 255 255), 24px 25px 0px rgb(229 231 235);
+  border-radius: 0rem 1rem 0rem 1rem;
+  width: 21rem;
+  height: 25rem;
   overflow: hidden;
+  margin-right: 1.5rem;
 }
 
 #thirdWork {
   display: flex;
   align-items: flex-end;
-  border-left: 0.31rem solid grey;
   background: url("../Icons/work_1.jpg") center center/cover;
-  width: 18.75rem;
-  height: 21.93rem;
-  border-radius: 0rem 1.87rem 1.87rem 0rem;
+  box-shadow: 5.2px 5.4px 0px rgb(255 255 255), 24px 25px 0px rgb(229 231 235);
+  border-radius: 0rem 1rem 0rem 1rem;
+  width: 21rem;
+  height: 25rem;
   overflow: hidden;
 }
 
@@ -84,17 +152,18 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 18.75rem;
+  width: 21rem;
   height: 0rem;
-  background-color: #f0ffff40;
-  border-radius: 0rem 1.87rem 1.87rem 0rem;
-  z-index: 1;
+  backdrop-filter: blur(8px);
+  background-color: rgb(255 255 255 / 0%);
   overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
 }
 
-.project img {
-  width: 2rem;
-  height: 2rem;
+.project svg {
+  width: 1.5rem;
+  height: 1.5rem;
   z-index: 1;
 }
 
@@ -105,7 +174,6 @@
   width: fit-content;
   height: 1.5rem;
   margin-top: 1.5rem;
-  text-shadow: 0rem 0rem 0.62rem #181818;
 }
 
 .project-Btn {
@@ -115,49 +183,89 @@
   font-size: 0.88rem;
   width: 4.5rem;
   height: 4.5rem;
-  background: -webkit-linear-gradient(black, #181818, black);
-  color: darkgray;
-  border: 0.06rem solid grey;
-  border-radius: 1.8rem;
+  background: #454545;
+  border-radius: 3rem;
   cursor: pointer;
 }
 
 #firstWork:hover .project {
   height: 100%;
-  transition: all 0.7s;
 }
 
 #secondWork:hover .project {
   height: 100%;
-  transition: all 0.7s;
 }
 
 #thirdWork:hover .project {
   height: 100%;
-  transition: all 0.7s;
+}
+
+hr {
+  color: #454545;
+  width: 100%;
+  margin: 2rem 0rem;
+}
+
+.seeMoreBtnBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 6rem;
+  margin-top: 4rem;
+  margin-bottom: 9rem;
 }
 
 #seeMoreBtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.88rem;
-  width: 8.75rem;
+  border: 2px solid #454545;
+  background: white;
+  width: fit-content;
   height: 2.5rem;
-  background: -webkit-linear-gradient(#00000050, #181818, #00000050);
-  color: darkgray;
-  border: 0.06rem solid grey;
-  border-radius: 0.37rem;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  text-decoration: none;
+  padding: 0rem 1.25rem;
 }
 
-#seeMoreBtn:hover {
-  border-radius: 1.25rem;
-  transition: all 0.5s ease-in-out;
-  font-size: 0.89rem;
+#seeMoreBtn:hover a > svg {
+  width: 0.85rem;
+  height: 0.85rem;
+  margin-left: 0.5rem;
 }
+
+#seeMoreBtn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #454545;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+}
+
+#seeMoreBtn a > svg {
+  width: 0rem;
+  height: 0rem;
+  margin-left: 0rem;
+  transition: all 0.4s ease, all 0.4s ease;
+}
+
+/* Work.css */
+
+.projectBox {
+  opacity: 0;
+  transform: translateY(10rem);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.projectBox.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 /* Media Query */
 @media (max-width: 1200px) {

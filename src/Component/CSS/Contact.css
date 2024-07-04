@@ -2,193 +2,208 @@
   padding: 0rem;
   margin: 0rem;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 #contactContainer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 3.4rem;
   width: 100%;
-  height: 43.7rem;
-  background: repeating-linear-gradient(7deg, black, transparent 415px);
-  color: white;
-  /* border: 1px solid red; */
+  height: fit-content;
+}
+
+#contactContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../Icons/bg3.jpg") center / cover no-repeat;
+  z-index: -1;
 }
 
 #contactContainerBox {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap;
-  width: 71rem;
-  height: 22rem;
-  /* border: 1px solid blue; */
-}
-
-/* CONTACT Left */
-.contactLeft {
-  display: flex;
-  justify-content: flex-start;
-  width: 28rem;
-  height: 17rem;
-  /* border: 1px solid white; */
-}
-
-.contactLeftContent {
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  flex-wrap: wrap;
+  width: 72.1rem;
+  height: 39.6rem;
+  padding: 4rem 0rem;
+}
+
+/* Contact Left */
+.contactLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
   width: 28rem;
-  height: 17rem;
+  height: 100%;
+  padding-left: 1rem;
 }
 
 .contactHeading {
-  color: darkgrey;
+  color: black;
   font-size: 3.12rem;
-  width: 28rem;
+  width: 100%;
   height: 3.1rem;
+  margin-bottom: 2rem;
 }
 
-.emailIdDiv {
+.contactInfoDiv {
   display: flex;
-  flex-direction: row;
-  text-decoration: none;
-  height: 1.56rem;
-  width: 28rem;
-}
-
-.emailIdDiv img {
-  width: 1.37rem;
-  height: 1.37rem;
-  border-radius: 0.31rem;
-}
-
-.emailIdDiv a {
-  color: grey;
-  font-size: 1rem;
-  text-decoration: none;
-  padding-left: 0.62rem;
-}
-
-.phoneNoDiv {
-  display: flex;
-  flex-direction: row;
+  justify-content: flex-start;
   align-items: center;
-  height: 1.56rem;
-  width: 28rem;
-}
-
-.phoneNoDiv img {
-  width: 1.37rem;
-  height: 1.37rem;
-  border-radius: 0.31rem;
-}
-
-.phoneNoDiv a {
-  font-size: 1rem;
-  padding-left: 0.62rem;
   text-decoration: none;
-  color: grey;
+  width: fit-content;
+  height: 2rem;
+  margin-bottom: 2rem;
+  padding: 0rem 1rem;
+}
+
+.wrapIcon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 2px solid #454545;
+  border-radius: 1.2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  overflow: hidden;
+}
+
+.wrapIcon::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  background-color: none;
+  width: 2.3rem;
+  height: 0rem;
+  transition: all 0.5s;
+}
+
+.contactInfoDiv:hover .wrapIcon::before {
+  top: 0;
+  background-color: #454545;
+  height: 2.2rem;
+}
+
+.contactInfoDiv:hover .wrapIcon svg {
+  fill: #ffffff;
+  transform: rotateY(360deg);
+}
+
+.wrapIcon svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: all 0.5s;
+}
+
+.contactInfoDiv a {
+  color: #454545;
+  font-size: 1rem;
+  text-decoration: none;
+  padding-left: 0.62rem;
   padding-bottom: 1rem;
 }
 
-.socialMediaIcons {
-  width: 28rem;
-  height: fit-content;
-}
-
-.socialMediaIcons a {
-  width: 1.9rem;
-  height: 1.9rem;
-  border-radius: 1.25rem;
-}
-
-.instagram {
-  margin: 0rem 0.5rem;
-}
-
-.socialMediaIcons a img {
-  width: 1.87rem;
-  height: 1.87rem;
-  z-index: 1;
-}
-
+/* Download CV */
 .downloadCV {
   display: flex;
   margin: 1.56rem 0rem;
-  height: 2.37rem;
+  height: fit-content;
+  width: 100%;
 }
 
 .downloadCV a {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 0.86rem;
-  background: -webkit-linear-gradient(#00000052, #181818, #00000052);
-  /* background: #181818; */
-  color: darkgray;
-  width: 8.75rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #454545;
+  width: fit-content;
   height: 2.5rem;
-  border-radius: 0.37rem;
   cursor: pointer;
-  border: 0.06rem solid grey;
+  border: 2px solid #454545;
   transition: all 0.5s ease-in-out;
   text-decoration: none;
+  padding: 0rem 1.25rem;
 }
 
-.downloadCV a:hover {
-  border-radius: 1.25rem;
-  transition: all 0.5s ease-in-out;
-  font-size: 0.87rem;
+.downloadCV a:hover svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.5rem;
 }
 
-/* CONTACT Right */
+.downloadCV a > svg {
+  width: 0rem;
+  height: 0rem;
+  margin-left: 0rem;
+  transition: all 0.4s ease, all 0.4s ease;
+}
+
+/* Contact Right */
 .contactRight {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 42.18rem;
-  height: 22rem;
-  /* border: 1px solid yellow; */
+  height: 21rem;
+  margin-top: 5rem;
 }
 
-.contactRightContent {
-  display: flex;
-  width: 38.31rem;
-  height: 22rem;
-}
-
-.contactRightContent form {
+.contactRight form {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   width: 38.31rem;
-  height: 20rem;
+  height: 100%;
 }
 
-.contactRightContent input {
-  border: 0.06rem solid grey;
-  background: #181818;
-  border-radius: 0.31rem;
-  outline: none;
-  color: darkgray;
+.contactInfoInputDiv {
   width: 38.31rem;
+  height: fit-content;
+}
+
+.contactInfoInputDiv > input {
+  border: 2px solid #454545;
+  background-color: transparent;
+  outline: none;
+  color: #454545;
+  width: 100%;
   height: 3rem;
 }
 
-.contactRightContent textarea {
-  background: #181818;
-  border: 0.06rem solid grey;
-  border-radius: 0.31rem;
+.contactInfoInputDiv > textarea {
+  border: 2px solid #454545;
+  background-color: transparent;
   outline: none;
-  color: darkgray;
-  width: 38.31rem;
+  color: #454545;
+  width: 100%;
   height: 5rem;
 }
 
-#userName {
+input:-internal-autofill-selected {
+   background-color: transparent !important;
+}
+
+.error {
+  color: red;
+  width: 100%;
+  font-size: 0.8rem;
+  height: fit-content;
+  margin-top: 0.3rem;
+}
+
+#name {
   width: 38.31rem;
   height: 3rem;
   padding-left: 0.62rem;
@@ -198,36 +213,59 @@
 }
 
 #email {
+  font-size: 1rem;
+  font-weight: 500;
   width: 38.31rem;
   height: 3rem;
   padding-left: 0.62rem;
-  font-size: 0.93rem;
   transition: all 0.3s ease-in-out;
 }
 
 #massage {
-  font-size: 0.93rem;
+  font-size: 1rem;
+  font-weight: 500;
   width: 38.31rem;
   padding: 0.62rem;
   transition: all 0.3s ease-in-out;
+  font-family: sans-serif;
+  text-transform: capitalize;
 }
 
 #submitBtn {
-  font-size: 0.88rem;
-  width: 8.75rem;
-  height: 2.5rem;
-  background: -webkit-linear-gradient(#00000050, #181818, #00000050);
-  color: darkgray;
-  border: 0.06rem solid grey;
-  border-radius: 0.37rem;
-  cursor: pointer;
-  transition: all 0.5s ease-in-out;
+  background: transparent;
+  border: none;
+  outline: none;
+  width: fit-content;
+  height: fit-content;
 }
 
-#submitBtn:hover {
-  border-radius: 1.25rem;
+#submitBtn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #454545;
+  width: fit-content;
+  height: 2.5rem;
+  cursor: pointer;
+  border: 2px solid #454545;
   transition: all 0.5s ease-in-out;
-  font-size: 0.91rem;
+  text-decoration: none;
+  padding: 0rem 1.5rem;
+}
+
+#submitBtn:hover span > svg {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.8rem;
+}
+
+#submitBtn span > svg {
+  width: 0rem;
+  height: 0rem;
+  margin-left: 0rem;
+  transition: all 0.4s ease, all 0.4s ease;
 }
 
 /* Add User Submit Successfully PopUp Section*/
@@ -236,35 +274,40 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #0e0e0ef0;
-  border: 1px solid grey;
-  border-radius: 7px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(8px);
+  background-color: rgb(0 0 0 / 15%);
   position: fixed;
-  width: 700px;
+  top: 27%;
+  left: 28%;
+  width: 600px;
   height: 250px;
+  border-radius: 1rem;
   font-size: 1.93rem;
 }
 
+/* #popUp::before {
+  content: "";
+  position: absolute;
+  width: 100rem;
+  height: 100rem;
+  background-color: transparent;
+} */
+
 #popUp h1 {
-  color: darkgrey;
+  color: #454545;
 }
 
 #popUpBtn {
-  font-size: 0.88rem;
-  width: 8rem;
-  height: 2.8rem;
-  background: #181818;
-  color: darkgray;
-  border: 0.06rem solid grey;
-  border-radius: 0.37rem;
+  font-size: 1rem;
+  width: fit-content;
+  height: 2.5rem;
+  background: transparent;
+  color: #454545;
+  border: 2px solid #454545;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-}
-
-#popUpBtn:hover {
-  border-radius: 1.25rem;
-  transition: all 0.5s ease-in-out;
-  font-size: 0.91rem;
+  padding: 0rem 3rem;
 }
 
 /* Media Query */

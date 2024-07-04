@@ -5,17 +5,15 @@ const AboutNav = () => {
   return (
     <>
       <nav className="aboutNav">
-        <ul>
-          <li>
-            <NavLink to="/about/skills">Skills</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about/experience">Experience</NavLink>
-          </li>
-          <li>
-            <NavLink to="/about/education">Education</NavLink>
-          </li>
-        </ul>
+        <div>
+          <NavLink to="/about/skills">Skills</NavLink>
+        </div>
+        <div>
+          <NavLink to="/about/experience">Experience</NavLink>
+        </div>
+        <div>
+          <NavLink to="/about/education">Education</NavLink>
+        </div>
       </nav>
     </>
   );

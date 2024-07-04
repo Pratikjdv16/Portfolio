@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <footer id="footer">
         <div>
-          <p>Copyright &copy; Pratik Jadhav</p>
+          <p>&copy; 2023 l Designed and coded by Pratik Jadhav 💻</p>
         </div>
       </footer>
     </>

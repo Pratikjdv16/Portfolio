@@ -11,36 +11,78 @@ import oracle from "../Icons/oracle-icon.png";
 import vscode from "../Icons/vs-code-icon.png";
 import git from "../Icons/git-icon.png";
 import github from "../Icons/github-icon.png";
+import figma from "../Icons/figma-logo.png";
+import Bootstrap from "../Icons/bootstrap-icon.png";
+import materialUi from "../Icons/material-ui-logo.png";
 
 const Skills = () => {
   return (
     <>
       <div className="skillBox">
-        <div className="aboutSkills">
-          <p>
-            <span className="aboutHeads">Front End</span>
-            <img className="icons" src={html} alt="" />
-            <img className="icons" src={css} alt="" />
-            <img className="icons" src={javaScript} alt="" />
-            <img className="icons" src={react} alt="" />
-            <img className="icons" src={redux} alt="" />
-          </p>
-          <p>
-            <span className="aboutHeads">Back End</span>
-            <img className="icons" src={node} alt="" />
-            <img className="icons" src={express} alt="" />
-          </p>
-          <p>
-            <span className="aboutHeads">Data Base</span>
-            <img className="icons" src={mongodb} alt="" />
-            <img className="oracle icons" src={oracle} alt="" />
-          </p>
-          <p>
-            <span className="aboutHeads">Others</span>
-            <img className="icons" src={vscode} alt="" />
-            <img className="icons" src={git} alt="" />
-            <img className="github icons" src={github} alt="" />
-          </p>
+        <div>
+          <img className="icons" src={javaScript} alt="" />
+          <span className="onHoverText">Javascript</span>
+        </div>
+        <div>
+          <img className="icons" src={react} alt="" />
+          <span className="onHoverText">React</span>
+        </div>
+        <div>
+          <img className="icons" src={redux} alt="" />
+          <span className="onHoverText">Redux Toolkit</span>
+        </div>
+        <div>
+          <img
+            className="icons"
+            style={{ width: "3.5rem", height: "3.5rem" }}
+            src={materialUi}
+            alt=""
+          />
+          <span className="onHoverText">Material UI</span>
+        </div>
+        <div>
+          <img className="icons" src={figma} alt="" />
+          <span className="onHoverText">Figma</span>
+        </div>
+        <div>
+          <img className="icons" src={css} alt="" />
+          <span className="onHoverText">CSS3</span>
+        </div>
+        <div>
+          <img className="oracle icons" src={Bootstrap} alt="" />
+          <span className="onHoverText">Bootstrap</span>
+        </div>
+        <div>
+          <img className="icons" src={html} alt="" />
+          <span className="onHoverText">HTML5</span>
+        </div>
+        <div>
+          <img className="icons" src={git} alt="" />
+          <span className="onHoverText">Git</span>
+        </div>
+        <div>
+          <img className="github icons" src={github} alt="" />
+          <span className="onHoverText">GitHub</span>
+        </div>
+        <div>
+          <img className="icons" src={vscode} alt="" />
+          <span className="onHoverText">VS Code</span>
+        </div>
+        <div>
+          <img className="icons" src={node} alt="" />
+          <span className="onHoverText">Node</span>
+        </div>
+        <div>
+          <img className="icons" src={express} alt="" />
+          <span className="onHoverText">Express</span>
+        </div>
+        <div>
+          <img className="icons" src={mongodb} alt="" />
+          <span className="onHoverText">MongoDB</span>
+        </div>
+        <div>
+          <img className="oracle icons" src={oracle} alt="" />
+          <span className="onHoverText">Oracle</span>
         </div>
       </div>
     </>

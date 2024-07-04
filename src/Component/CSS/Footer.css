@@ -2,7 +2,6 @@
   padding: 0rem;
   margin: 0rem;
   box-sizing: border-box;
-  font-family: sans-serif;
 }
 
 #footer {
@@ -10,9 +9,13 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  position: fixed;
+  bottom: 0rem;
   width: 100%;
   height: 3.43rem;
-  background: -webkit-linear-gradient( #181818, black);
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust background color */
+  z-index: 3;
 }
 
 #footer div {
@@ -22,16 +25,14 @@
   flex-wrap: wrap;
   width: 100%;
   height: 3.43rem;
-  background: -webkit-linear-gradient( #181818, black);
-  border-top: 0.06rem solid #a14848;
 }
 
 #footer p {
   display: flex;
   flex-wrap: wrap;
-  color: grey;
+  color: #454545;
   font-size: 1.06rem;
-  height: 1rem;
+  height: fit-content;
 }
 
 /* Media Query */

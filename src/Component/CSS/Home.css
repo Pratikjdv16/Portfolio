@@ -2,7 +2,6 @@
   box-sizing: border-box;
   padding: 0rem;
   margin: 0rem;
-  font-family: sans-serif;
 }
 
 #homeContainer {
@@ -10,11 +9,21 @@
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  position: absolute;
+  top: 3.4rem;
   width: 100%;
-  height: 43.7rem;
-  overflow: hidden;
-  background: repeating-linear-gradient(7deg, black, transparent 415px);
-  /* border: 1px solid red; */
+  height: fit-content;
+}
+
+#homeContainer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("../Icons/portfolio-bg.jpg") center center / cover no-repeat;
+  z-index: -1;
 }
 
 #homeContainerBox {
@@ -22,71 +31,56 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  width: 65.2rem;
-  height: 25.5rem;
-  /* border: 1px solid blue; */
+  width: 72.1rem;
+  height: 39.4rem;
 }
 
-.section1 {
+.section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 27rem;
-  height: 25rem;
-  /* border: 1px solid white; */
+  width: 37rem;
+  height: 100%;
 }
 
-.section2 {
-  /* border: 1px solid yellow; */
+.section p {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  /* animation: pratik-2 30s ease-in-out infinite; */
-  /* border-left: 0.1rem solid #ffdac1; */
-  border-radius: 4rem 1rem 13rem 13rem;
-  /* border-right: 0.1rem solid #ffdac1; */
-  /* box-shadow: -0.35rem 0.35rem 0.65rem #000000c2; */
-  width: 27rem;
-  height: 25rem;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.43rem;
+  height: fit-content;
+  margin-top: 0.5rem;
+  width: 100%;
 }
 
-.section2 div {
-  background: url("../Icons/software-engineer2-png.png") center center/cover;
-  /* animation: pratik-1 30s ease infinite; */
-  width: 27rem;
-  height: 25rem;
-  border-radius: 0rem 0rem 3.5rem 4.5rem;
+.section p > svg {
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
 }
 
-@keyframes pratik-1 {
+.section p > img {
+  margin-right: 0.5rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.openToWorkIcon {
+  animation: zoomInOut 1s infinite;
+}
+
+@keyframes zoomInOut {
   0% {
-    transform: rotate(0deg);
+    transform: scale(1);
   }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes pratik-2 {
-  0% {
-    border-color: darkturquoise;
-  }
-
-  25% {
-    border-color: tomato;
-  }
-
   50% {
-    border-color: royalblue;
+    transform: scale(1.3);
   }
-
-  75% {
-    border-color: khaki;
-  }
-
   100% {
-    border-color: slategray;
+    transform: scale(1);
   }
 }
 
@@ -95,17 +89,21 @@
   height: 3rem;
 }
 
-.heading span {
-  font-weight: 600;
-  color: #a33f3f;
-  padding-right: 0.93rem;
-  text-shadow: 0rem 0rem 0.62rem black;
+.heading::after {
+  content: "|";
+  animation: blink 1s infinite;
 }
 
-.heading .ownerName {
-  color: darkgrey;
-  font-weight: 600;
-  text-shadow: none;
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .position {
